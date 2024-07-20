@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../jquery3.7.1.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../JS/faq.js"></script>
 	<title>Healing Hands Rehab</title>
 
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -31,9 +34,9 @@
 		<div class="head-lines">
 			<br><br>
 			<!-- Main headline -->
-			<h1>Canada's Leading Healthcare Provider</h1>
+			<h1 style="text-shadow: 2px 2px 5px black;">Canada's Leading Healthcare Provider</h1>
 			<!-- Sub headline -->
-			<h2>Get Better. Faster..</h2>
+			<h2 style="text-shadow: 2px 2px 5px black;">Get Better. Faster..</h2>
 			<br><p>
 				<!-- Description -->
 				<br><br>Our healthcare staff and professionals strive to improve the physical and<br>
@@ -52,18 +55,17 @@
 			Our team of physiotherapists, chiropractors, personal trainers, and massage therapists are ready to help you meet your health goals.<br>
 			We believe in creating special moments for our clients each and every day, whether at the bedside, on the phone or in the clinic.<br>
 			We are dedicated to enhancing the quality of life, dignity and independence of all Canadians, by providing customized<br> care plans and 
-			solutions that allow clients to remain in the comfort of their own home.<br>
+			solutions that allow clients to remain in the comfort of their own home.
 		</p>
 		<div class="row">
 			<div class="service-col">
 				<!-- Physical Therapy service details -->
 				<h3>Physical Therapy</h3>
 				<ul>
-					<!-- Description of undergraduate service -->
-					<li class="li"><u>Physical therapy</u> focuses on improving movement, strength, and functionality. It often involves <u>exercises, stretches, 
-						manual therapy, and the use of equipment to aid recovery</u>. Common conditions treated include: Musculoskeletal injuries (sprains, fractures), 
+					<li class="li" style="display:inline;"><br>1. Physical therapy focuses on improving movement, strength, and functionality. <br>2. It often involves <u>exercises, stretches, 
+						manual therapy, and the use of equipment to aid recovery</u>. <br>3. Common conditions treated include: Musculoskeletal injuries (sprains, fractures), 
 						Post-surgical recovery (joint replacements), Neurological conditions (stroke, Parkinson's disease) and Chronic conditions (arthritis).
-						It involves a thorough assessment of the patient’s condition, which includes reviewing their medical history, 
+						<br>4. It involves a thorough assessment of the patient’s condition, which includes reviewing their medical history, 
 						conducting a physical examination to evaluate range of motion, strength, flexibility, and posture, and assessing their ability to perform daily activities.</li>
 				</ul>
 				<!-- Button linking to service page -->
@@ -73,7 +75,6 @@
 				<!-- Speech and Language Therapy service details -->
 				<h3>Speech and Language Virtual Therapy</h3>
 				<ul>
-					<!-- Description of post-graduation service -->
 					<li class="li">
 						<u>Speech and language virtual therapy</u> is an innovative approach that uses technology to provide speech and language therapy 
 						services remotely. This form of therapy is conducted through <u>video conferencing platforms,</u> allowing 
@@ -90,7 +91,6 @@
 				<!-- Master's service details -->
 				<h3>Massage Therapy</h3>
 				<ul>
-					<!-- Description of Master's service -->
 					<li class="li">
 						Massage therapy involves various techniques to 
 						manipulate the muscles and other soft tissues of the body. Unlike acupressure, 
@@ -107,30 +107,30 @@
 		</div>
 	</section>
 
-	<!-- Campus section -->
-	<section class="campusbg">
-		<div class="campus">
-			<!-- Heading for campus section -->
+	<!-- Location section -->
+	<section class="locationbg">
+		<div class="location">
+			<!-- Heading for Location section -->
 			<h1>Our Rehab Centers:</h1><br><br><br>
-			<!-- Row for displaying campuses -->
+			<!-- Row for displaying Location -->
 			<div class="rows" class="row">
-				<!-- Campus 1 -->
-				<div class="campus-col">
-					<img src="../IMG/london.png" alt="campus image">
+				<!-- Location 1 -->
+				<div class="location-col">
+					<img src="../IMG/london.png" alt="location image">
 					<div class="layer">
 						<h3>CANADA</h3>
 					</div>
 				</div>
-				<!-- Campus 2 -->
-				<div class="campus-col">
-					<img src="../IMG/newyork.png" alt="campus image">
+				<!-- Location 2 -->
+				<div class="location-col">
+					<img src="../IMG/newyork.png" alt="location image">
 					<div class="layer">
 						<h3>NEW YORK</h3>
 					</div>
 				</div>
-				<!-- Campus 3 -->
-				<div class="campus-col">
-					<img src="../IMG/washington.png" alt="campus image">
+				<!-- Location 3 -->
+				<div class="location-col">
+					<img src="../IMG/washington.png" alt="location image">
 					<div class="layer">
 						<h3>SYDNEY</h3>
 					</div>
@@ -139,22 +139,55 @@
 		</div>
 	</section>
 
-	<!-- Call To Action section -->
-	<section class="cta">
-		<!-- Call to action heading -->
-		<h1>Enroll </h1>
-		<!-- Button linking to contact-us page -->
-		<a href="contact-us.html" class="hero-btn">CONTACT US</a>
-	</section>
+
+
+	<!-- FAQ START -->
+    <div class="faq-container">
+		<h2>Frequently Asked Questions:-</h2><br>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: green; color: white;">How do you get started with virtual therapy sessions?<span class="arrow"></span></div>
+            <div class="faq-answer" style="background-color: rgba(143, 167, 10, 0.863); color: white;">To get started with virtual therapy sessions, you typically need to sign up on our website and 
+				complete an initial assessment form. After that, you will be matched with a licensed therapist or 
+				rehabilitation specialist who will schedule your first session. You'll need a device with a 
+				camera and microphone, as well as a stable internet connection for the sessions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: green; color: white;">Are virtual therapy sessions as effective as in-person sessions?<span class="arrow"></span></div>
+            <div class="faq-answer" style="background-color: rgba(143, 167, 10, 0.863); color: white;">Yes, virtual therapy sessions can be just as effective as in-person sessions 
+				for many individuals and conditions. Research has shown that telehealth services can lead to comparable outcomes in terms of patient satisfaction, 
+				adherence to treatment plans, and overall effectiveness. However, the suitability of virtual therapy can depend on the specific needs and conditions of the patient.</div>
+        </div>
+
+		<div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: green; color: white;">What role does the patient play in their own rehabilitation?<span class="arrow"></span></div>
+            <div class="faq-answer" style="background-color: rgba(143, 167, 10, 0.863); color: white;">Patients play a crucial role in their rehabilitation by actively 
+				participating in therapy sessions, following the prescribed treatment plan, performing exercises at home, and providing feedback on their progress. 
+				Your engagement and adherence to the plan significantly impact the effectiveness of the therapy.</div>
+        </div>
+
+		<div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: green; color: white;">Can therapy help with post-surgical recovery?<span class="arrow"></span></div>
+            <div class="faq-answer" style="background-color: rgba(143, 167, 10, 0.863); color: white;">Yes, therapy is often an essential part of post-surgical 
+				recovery. We provide tailored rehabilitation programs to support healing, restore function, and help you return to your normal 
+				activities as quickly and safely as possible.
+			</div>
+
+        </div>
+    </div>
+	<!-- FAQ END -->
+
+
 
 	<!-- Footer section -->
-	<footer style="background-image: linear-gradient(rgba(158, 17, 17, 0.648),rgba(12, 162, 69, 0.758)), url(../IMG/certificate.jpg);">
+	<footer style="background-image: linear-gradient(rgba(62, 158, 17, 0.023),rgb(12, 162, 69)), url(../IMG/certificate.jpg);">
 	
 	<div class="footer">
 		<!-- Footer heading -->
 		<h4>Your Journey to Recovery Starts Here..</h4>
 		<!-- Footer contact information -->
-		<p>&copy; 2024  | <i class='bx bxl-gmail'></i> <a href="mailto:abc@xyz.com"> abc@xyz.com</a> | <i class='bx bx-phone-call'></i> <a href="tel:(123) 456-8901">(123) 456-8901</a> | <i class='bx bx-pin'></i><a href="https://www.google.com/maps/place/Toronto,+ON/">Toronto, ON</a></p>
+		<p style="font-size: 18px;">&copy; 2024  | <i class='bx bxl-gmail' style="color: black;" ></i> <a href="mailto:abc@xyz.com"> abc@xyz.com</a> | <i class='bx bx-phone-call' style="color: black;"></i> <a href="tel:(123) 456-8901">(123) 456-8901</a> | <i class='bx bx-pin' style="color: black;"></i><a href="https://www.google.com/maps/place/Toronto,+ON/">Toronto, ON</a></p>
 	</div>
 
 	<div class="icons1">

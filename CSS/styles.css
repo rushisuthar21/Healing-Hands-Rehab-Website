@@ -25,24 +25,6 @@ nav img {
 	width: 150px;
 }
 
-
-/* Call To Action */
-.cta{
-	margin: 100px auto;
-	width: 80%;
-	color: #fff;
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../IMG/banner2.jpg);
-	background-position: center;
-	background-size: cover;
-	border-radius: 10px;
-	text-align: center;
-	padding: 100px 0;
-}
-.cta h1{
-	color: #fff;
-	margin-bottom: 40px;
-	padding: 0;
-}
 .hero-btn{
 	display: inline-block;
 	text-decoration: none;
@@ -68,16 +50,19 @@ nav img {
 	background-position: center;
 	background-size: cover;
 	color: #fff;
-	padding: 2px 0;
+	padding: 3px 0;
 }
 .footer h4{
 	margin-bottom: 10px;
-	font-size: 18px;
+	font-size: 22px;
 	margin-top: 5px;
 	font-weight: 400;
+	color: black;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .footer a{
-	color: yellow;
+	color: rgb(234, 255, 8);
+	font-size: 20px;
 }
 /* Footer End */
 
@@ -161,7 +146,7 @@ nav img {
 .location{
 	width: 80%;
 	margin: auto;
-	padding: 80px 0;
+	padding: 40px 0;
 }
 
 .location iframe{
@@ -292,9 +277,9 @@ nav {
 	width: 100%;
 	margin: auto;
 	text-align: center;
-	padding-top: 80px;
+	padding-top: 60px;
 	background-color: #013A6B;
-  	background-image: -webkit-linear-gradient(52deg, #bcbac5 50%, #53d00bdc 50%);
+  	background-image: -webkit-linear-gradient(53deg, #bcbac5 50%, #53d00bdc 50%);
 }
 .service h1{
 	font-size: 36px;
@@ -302,11 +287,11 @@ nav {
 	color: #fff;	
 }
 .service p {
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 300;
 	line-height: 22px;
 	padding: 10px;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 	color: #fff;
 }
 .row {
@@ -325,7 +310,7 @@ nav {
 	background-color: white;
 	border-radius: 10px;
 	margin: 30px;
-	padding: 20px 25px;
+	padding: 20px 15px;
 	margin: 10px 10px;
 	box-sizing: border-box;
 	justify-content: space-around;
@@ -376,13 +361,13 @@ h3 {
 }
 /* service END */
 
-/* campus */
-.campusbg {
+/* location */
+.locationbg {
 	background-color: #013A6B;
-  	background-image: -webkit-linear-gradient(-64deg, #bcbac5 50%, #53d00bdc 50%);
-	margin-bottom: 10%;
+  	background-image: -webkit-linear-gradient(-62deg, #bcbac5 50%, #53d00bdc 50%);
+	margin-bottom: 5%;
 }
-.campus {
+.location {
 	/* width: 80%;	 */
 	text-align: center;
 	padding-top: 80px;
@@ -396,7 +381,7 @@ h3 {
 	align-items: center;
 }
 
-.campus-col {
+.location-col {
 	flex-basis: 20%;
 	border-radius: 10px;
 	margin-bottom: 30px;
@@ -404,7 +389,7 @@ h3 {
 	overflow: hidden;
 }
 
-.campus-col img {
+.location-col img {
 	width: 100%;
 	display: block;
 }
@@ -447,6 +432,64 @@ h3 {
 	text-align: center;
 	padding-top: 100px;
 }
+/* location End*/
+
+/* FAQ */
+.faq-container {
+    max-width: 1150px;
+    margin: 0 auto;
+	padding-bottom: 10px;
+}
+.faq-container h2 {
+	text-align: center;
+	font-size: 35px;
+	padding-bottom: 20px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 19px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.faq-question {
+    padding: 24px;
+    font-size: 21px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-answer {
+    display: none;
+    padding: 19px;
+    font-size: 19px;
+}
+.arrow {
+    display: inline-block;
+    width: 10px;
+	position: absolute;
+	right: 13%;
+    height: 10px;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(225deg);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+/* FAQ Ends*/
+
+
+
 /* Blog START */
 
 .sub-header{
@@ -607,10 +650,6 @@ span{
 	.footer p {
 		font-size: 14px;
 	}
-	.cta h1
-	{
-		font-size: 18px;
-	}
 	.header3 h1{
 		font-size: 45px;
         margin-top: 136px;	
@@ -668,10 +707,6 @@ span{
 	.service h1{
 		color: #000;	
 	}
-	.cta h1
-	{
-		font-size: 29px;
-	}
 	.service p {
 		color: #000;
 	}
@@ -690,7 +725,7 @@ span{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px){
-	.campus{
+	.location{
 		width: 100%;
 	}
 	.rows{
@@ -698,13 +733,13 @@ span{
 		margin: 0 60px;
 		justify-content: space-between;
 	}
-	.campus h1{
+	.location h1{
 		font-size: xx-large;
 	}
-	.campus p{
+	.location p{
 		padding-bottom: 60px;
 	}
-	.campus-col {
+	.location-col {
 		flex-basis: 27%;
 		justify-content: space-between;
 	}
