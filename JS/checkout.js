@@ -33,10 +33,14 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    proceedToPayBtn.addEventListener("click", () => {
+    document.getElementById("proceed-to-pay").addEventListener("click", () => {
+        // Alert message before redirection (optional)
         alert("Proceeding to payment...");
-        // Handle the payment process here
+        
+        // Redirect to the "Thank You" page
+        window.location.href = "../HTML/thank-you.html";
     });
+    
 
     updateCart();
 });
