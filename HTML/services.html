@@ -8,9 +8,11 @@
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="../CSS/services.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/cart.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../JS/services.js" defer></script>
+    <script src="../JS/cart.js"></script>
+    <script src="../JS/checkout.js"></script>
 </head>
 <body>
     <section class="header">
@@ -18,11 +20,12 @@
             <a href="index.html"><img src="../IMG/logo.png" alt="Healing Hands Rehab Logo"></a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="user-login.html">User Login</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="service.html">Services We Offer</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="../HTML/login.html">User Login</a></li>
+					<li><a href="about-us.html">About Us</a></li>
+					<li><a href="../HTML/services.html">Services We Offer</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="../HTML/gallery.html">Gallery</a></li>
+					<li><a href="../HTML/contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -33,6 +36,14 @@
     </section>
 
     <section class="services-page">
+        <!-- Cart Button -->
+        <a href="../HTML/checkout.html" class="cart-link">
+            <div class="cart-button" id="cart-button">
+                <i class='bx bx-cart'></i>
+                <span id="cart-count">0</span>
+            </div>
+        </a>
+        
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Search for a service...">
             <i id="search-icon" class='bx bx-search'></i>
@@ -41,39 +52,45 @@
             <!-- Service Cards -->
             <div class="service-card">
                 <img src="../IMG/physio.jpg" alt="Physical Therapy">
-                <h3>Physical Therapy($150)</h3>
+                <h3>Physical Therapy(Price: $150)</h3>
                 <p>Focuses on improving movement, strength, and functionality through exercises, stretches, and manual therapy. Common conditions treated include musculoskeletal injuries, post-surgical recovery, neurological conditions, and chronic conditions.</p>
                 <button><a href="physical-therapy.html">Click to Know More</a></button>
+                <button class="add-to-cart" data-service="Physical Therapy" data-price="150">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/speech.jpg" alt="Speech and Language Therapy">
-                <h3>Speech and Language Therapy($100)</h3>
+                <h3>Speech and Language Therapy(Price: $100)</h3>
                 <p>Provides speech and language therapy services remotely via video conferencing. The virtual setting includes interactive tools such as digital flashcards, games, and worksheets.</p>
                 <button><a href="speech-therapy.html">Click to Know More</a></button>
+                <button class="add-to-cart" data-service="Speech and Language Therapy" data-price="100">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/massage.jpg" alt="Massage Therapy">
-                <h3>Massage Therapy($200)</h3>
+                <h3>Massage Therapy(Price: $200)</h3>
                 <p>Includes various techniques such as Swedish Massage, Hot Stone Massage, Thai Massage, and Trigger Point Massage to reduce stress, anxiety, muscle tension, and pain. Promotes faster healing of injured tissues.</p>
                 <button><a href="massage-therapy.html">Click to Know More</a></button>
+                <button class="add-to-cart" data-service="Massage Therapy" data-price="200">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/chiropactic.jpg" alt="Chiropractic Care">
-                <h3>Chiropractic Care($250)</h3>
+                <h3>Chiropractic Care(Price: $250)</h3>
                 <p>Focuses on diagnosing and treating neuromuscular disorders, primarily through manual adjustment and spinal manipulation. Aims to alleviate pain and improve physical function.</p>
                 <button><a href="chiropractic-care.html">Click to Know More</a></button>
+                <button class="add-to-cart" data-service="Chiropractic Care" data-price="250">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/nutrition.jpg" alt="Nutritional Counseling">
-                <h3>Nutritional Counseling($80)</h3>
+                <h3>Nutritional Counseling(Price: $80)</h3>
                 <p>Provides personalized nutritional advice to help manage health conditions, improve overall well-being, and support specific health goals.</p>
                 <button><a href="nutritional-counseling.html">Click to Know More</a></button>
+                <button class="add-to-cart" data-service="Nutritional Counseling" data-price="80">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/rehabilitation.jpg" alt="Rehabilitation Services">
-                <h3>Rehabilitation Services($200)</h3>
+                <h3>Rehabilitation Services(Price: $200)</h3>
                 <p>Offers comprehensive rehabilitation services to aid recovery from injuries or surgeries. Includes physical therapy, occupational therapy, and other rehabilitation interventions.</p>
                 <button><a href="rehabilitation-services.html">Click to Know More</a></button>
+                <button class="add-to-cart" data-service="Rehabilitation Services" data-price="200">Add to Cart</button>
             </div>
         </div>
     </section>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Healing Hands Rehab</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../CSS/services.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/cart.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/checkout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../JS/cart.js"></script>
+    <script src="../JS/checkout.js"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="../IMG/logo.png" alt="Healing Hands Rehab Logo"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../HTML/login.html">User Login</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="../HTML/services.html">Services We Offer</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="../HTML/contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>        
+        <div class="head-lines">
+            <h1>Checkout</h1>
+        </div>
+    </section>
+
+    <section class="checkout-section">
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- JavaScript will populate this area with cart items -->
+            </tbody>
+        </table>
+        <div class="checkout-summary">
+            <h2>Total: $<span id="cart-total">0</span></h2>
+            <button id="proceed-to-pay">Proceed to Pay</button>
+        </div>
+    </section>
+    
+    <footer style="background-image: linear-gradient(rgba(158, 17, 17, 0.648),rgba(12, 162, 69, 0.758)), url(../IMG/certificate.jpg);">
+        <div class="footer">
+            <h4>Your Journey to Recovery Starts Here...</h4>
+            <p>&copy; 2024 | <i class='bx bxl-gmail'></i> <a href="mailto:abc@xyz.com">abc@xyz.com</a> | <i class='bx bx-phone-call'></i> <a href="tel:(123) 456-8901">(123) 456-8901</a> | <i class='bx bx-pin'></i><a href="https://www.google.com/maps/place/Toronto,+ON/">Toronto, ON</a></p>
+        </div>
+        <div class="icons1">
+            <a href="https://www.linkedin.com" class="icons1"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.twitter.com" class="icons1"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.instagram.com" class="icons1"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.facebook.com" class="icons1"><i class="bx bxl-facebook"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

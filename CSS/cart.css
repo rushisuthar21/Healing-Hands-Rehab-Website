@@ -1,0 +1,29 @@
+/* Ensure the body has relative positioning */
+body {
+    position: relative;
+}
+
+/* Position the cart button to the right side */
+.cart-button {
+    position: absolute;
+    top: 290px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Adjust as needed */
+    background-color: #f8f8f8; /* Adjust as needed */
+    border-radius: 5px; /* Adjust as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+}
+
+.cart-button i {
+    font-size: 24px; /* Adjust as needed */
+    margin-right: 5px; /* Adjust as needed */
+}
+
+.cart-button #cart-count {
+    font-size: 16px; /* Adjust as needed */
+}
+
+

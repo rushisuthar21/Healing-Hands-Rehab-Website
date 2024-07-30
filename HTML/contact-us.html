@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Title of the webpage -->
 	<title>Contact Us</title>
+	<script src="../JS/contact.js"></script>
 
 	<!-- Link to custom CSS stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
@@ -28,12 +29,12 @@
 			<div class="nav-links">
 				<ul>
 					<!-- Navigation links -->
-					<li><a href="index.html">Home</a></li>
+					<li><a href="../HTML/login.html">User Login</a></li>
 					<li><a href="about-us.html">About Us</a></li>
-					<li><a href="course.html">Courses We Offer</a></li>
+					<li><a href="../HTML/services.html">Services We Offer</a></li>
 					<li><a href="blog.html">Blog</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="contact-us.html">Contact Us</a></li>
+					<li><a href="../HTML/gallery.html">Gallery</a></li>
+					<li><a href="../HTML/contact-us.html">Contact Us</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -80,12 +81,16 @@
 				
 				<div class="contact-col">
 					<!-- Contact form -->
-					<form action="thankyoumessage.html" method="post">
-						<input type="text" placeholder="Enter Your Name" required>
-						<input type="email" placeholder="Enter Your Email-Id" required>
-						<input type="text" placeholder="Enter Your Subject" required>
-						<textarea rows="8" placeholder="Type Your Message" required></textarea>
-						<button type="submit" class="hero-btn red-btn">Send Message</button>
+					<form id="contactForm" action="../HTML/thankyoumessage.html" method="post" onsubmit="return validateForm()">
+						<input type="text" id="name" placeholder="Enter Your Name" required>
+        				<br><br>
+        				<input type="email" id="email" placeholder="Enter Your Email-Id" required>
+        				<br><br>
+        				<input type="text" id="subject" placeholder="Enter Your Subject" required>
+        				<br><br>
+        				<textarea id="message" rows="8" placeholder="Type Your Message" required></textarea>
+        				<br><br>
+        				<button type="submit" class="hero-btn red-btn">Send Message</button>
 					</form>
 				</div>
 			</div>
