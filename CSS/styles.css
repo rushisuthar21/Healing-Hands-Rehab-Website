@@ -6,7 +6,7 @@
 
 /* Index Page Header */
 .header {
-	background-image: linear-gradient(rgba(11, 158, 47, 0.783), rgba(179, 142, 21, 0.642)),url("../IMG/home.png");
+	background-image: linear-gradient(rgba(11, 158, 47, 0.783), rgba(179, 142, 21, 0.642)),url("../IMG/home.jpg");
 	min-height: 100vh;
 	width: 100%;
 	background-position: center;

@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic meta tags for charset, compatibility, and viewport settings -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Healing Hands Rehab</title>
 
+    <!-- Links to favicon and external stylesheets -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="../CSS/services.css">
     <link rel="stylesheet" type="text/css" href="../CSS/cart.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- Scripts for jQuery and custom JavaScript files -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../JS/cart.js"></script>
     <script src="../JS/checkout.js"></script>
 </head>
 <body>
+    <!-- Header section with navigation menu and site branding -->
     <section class="header">
         <nav>
             <a href="index.html"><img src="../IMG/logo.png" alt="Healing Hands Rehab Logo"></a>
             <div class="nav-links">
                 <ul>
                     <li><a href="../HTML/login.html">User Login</a></li>
-					<li><a href="../HTML/about.html">About Us</a></li>
-					<li><a href="../HTML/services.html">Services We Offer</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="../HTML/gallery.html">Gallery</a></li>
-					<li><a href="../HTML/contact-us.html">Contact Us</a></li>
+                    <li><a href="../HTML/about.html">About Us</a></li>
+                    <li><a href="../HTML/services.html">Services We Offer</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="../HTML/contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,6 +40,7 @@
         </div>
     </section>
 
+    <!-- Main content section for displaying services -->
     <section class="services-page">
         <!-- Cart Button -->
         <a href="../HTML/checkout.html" class="cart-link">
@@ -44,55 +50,60 @@
             </div>
         </a>
         
+        <!-- Search bar for filtering services -->
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Search for a service...">
             <i id="search-icon" class='bx bx-search'></i>
         </div>
+        
+        <!-- Container for service cards -->
         <div id="services-container" class="services-container">
-            <!-- Service Cards -->
+            <!-- Individual service cards with description and add-to-cart button -->
             <div class="service-card">
                 <img src="../IMG/physio.jpg" alt="Physical Therapy">
-                <h3>Physical Therapy(Price: $150)</h3>
+                <h3>Physical Therapy (Price: $150)</h3>
                 <p>Focuses on improving movement, strength, and functionality through exercises, stretches, and manual therapy. Common conditions treated include musculoskeletal injuries, post-surgical recovery, neurological conditions, and chronic conditions.</p>
                 <button class="add-to-cart" data-service="Physical Therapy" data-price="150">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/speech.jpg" alt="Speech and Language Therapy">
-                <h3>Speech and Language Therapy(Price: $100)</h3>
+                <h3>Speech and Language Therapy (Price: $100)</h3>
                 <p>Provides speech and language therapy services remotely via video conferencing. The virtual setting includes interactive tools such as digital flashcards, games, and worksheets.</p>
                 <button class="add-to-cart" data-service="Speech and Language Therapy" data-price="100">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/massage.jpg" alt="Massage Therapy">
-                <h3>Massage Therapy(Price: $200)</h3>
+                <h3>Massage Therapy (Price: $200)</h3>
                 <p>Includes various techniques such as Swedish Massage, Hot Stone Massage, Thai Massage, and Trigger Point Massage to reduce stress, anxiety, muscle tension, and pain. Promotes faster healing of injured tissues.</p>
                 <button class="add-to-cart" data-service="Massage Therapy" data-price="200">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/chiropactic.jpg" alt="Chiropractic Care">
-                <h3>Chiropractic Care(Price: $250)</h3>
+                <h3>Chiropractic Care (Price: $250)</h3>
                 <p>Focuses on diagnosing and treating neuromuscular disorders, primarily through manual adjustment and spinal manipulation. Aims to alleviate pain and improve physical function.</p>
                 <button class="add-to-cart" data-service="Chiropractic Care" data-price="250">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/nutrition.jpg" alt="Nutritional Counseling">
-                <h3>Nutritional Counseling(Price: $80)</h3>
+                <h3>Nutritional Counseling (Price: $80)</h3>
                 <p>Provides personalized nutritional advice to help manage health conditions, improve overall well-being, and support specific health goals.</p>
                 <button class="add-to-cart" data-service="Nutritional Counseling" data-price="80">Add to Cart</button>
             </div>
             <div class="service-card">
                 <img src="../IMG/rehabilitation.jpg" alt="Rehabilitation Services">
-                <h3>Rehabilitation Services(Price: $200)</h3>
+                <h3>Rehabilitation Services (Price: $200)</h3>
                 <p>Offers comprehensive rehabilitation services to aid recovery from injuries or surgeries. Includes physical therapy, occupational therapy, and other rehabilitation interventions.</p>
                 <button class="add-to-cart" data-service="Rehabilitation Services" data-price="200">Add to Cart</button>
             </div>
         </div>
     </section>
 
+    <!-- Call-to-action section for contacting the business -->
     <section class="cta">
         <a href="contact-us.html" class="hero-btn">CONTACT US</a>
     </section>
 
+    <!-- Footer section with contact details and social media links -->
     <footer style="background-image: linear-gradient(rgba(158, 17, 17, 0.648),rgba(12, 162, 69, 0.758)), url(../IMG/certificate.jpg);">
         <div class="footer">
             <h4>Your Journey to Recovery Starts Here...</h4>
@@ -107,4 +118,3 @@
     </footer>
 </body>
 </html>
-

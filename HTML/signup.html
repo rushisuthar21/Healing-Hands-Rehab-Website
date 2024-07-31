@@ -2,48 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healing Hands Rehab-Sign Up</title>
+    
+    <!-- Google Fonts for styling -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="../CSS/signup-styles.css">
+    
+    <!-- Favicon for the website -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
+        // jQuery function to add 'loaded' class to body when document is ready
         $(document).ready(function() {
             $('body').addClass('loaded');
         });
     </script>
+    
+    <!-- Link to external JavaScript file -->
     <script src="../JS/signup-script.js"></script>
 </head>
 <body>
+    <!-- Background image -->
     <div class="bg-image"></div>
+    
+    <!-- Main container for the sign-up form -->
     <div class="container">
         <div class="signup-box">
+            <!-- Page titles -->
             <h1>Healing Hands Rehab</h1>
             <h2>Create Your Account</h2>
+            
+            <!-- Sign-up form -->
             <form id="signupForm">
+                <!-- First name input -->
                 <div class="input-group">
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName" required>
                 </div>
+                
+                <!-- Last name input -->
                 <div class="input-group">
                     <label for="lastName">Last Name</label>
                     <input type="text" id="lastName" required>
                 </div>
+                
+                <!-- Email input -->
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" required>
                 </div>
+                
+                <!-- Phone number input -->
                 <div class="input-group">
                     <label for="phone">Contact Number</label>
                     <input type="tel" id="phone" required>
                 </div>
+                
+                <!-- Password input -->
                 <div class="input-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" required>
                 </div>
+                
+                <!-- Submit button -->
                 <button type="submit">Sign Up</button>
             </form>
+            
+            <!-- Link to login page -->
             <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
         </div>
     </div>

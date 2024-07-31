@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character set for the document -->
     <meta charset="UTF-8">
+    <!-- Responsive design viewport settings -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>Healing Hands Rehab-login</title>
+    <!-- Link to Google Fonts for custom font styles -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="../CSS/style.css">
+    <!-- Favicon for the website -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
+    <!-- jQuery library for easy DOM manipulation and event handling -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
+        // jQuery function that runs when the document is ready
         $(document).ready(function() {
+            // Add a class to the body when the page loads for styling purposes
             $('body').addClass('loaded');
         });
     </script>
+    <!-- Link to external JavaScript file -->
     <script src="../JS/script.js"></script>
 </head>
 <body>
+    <!-- Background image for the page -->
     <div class="bg-image"></div>
     <div class="container">
+        <!-- Login box container -->
         <div class="login-box">
+            <!-- Main heading for the application -->
             <h1>Healing Hands Rehab</h1>
+            <!-- Subheading for the application -->
             <h2>Virtual Therapy & Rehabilitation</h2>
+            <!-- Login form -->
             <form id="loginForm">
                 <div class="input-group">
+                    <!-- Email label and input field -->
                     <label for="email">Email</label>
                     <input type="email" id="email" required>
                 </div>
                 <div class="input-group">
+                    <!-- Password label and input field -->
                     <label for="password">Password</label>
                     <input type="password" id="password" required>
                 </div>
+                <!-- Submit button for the form -->
                 <button type="submit">Login</button>
             </form>
-            <p class="forgot-password"><a href="forgot-password.html">Forgot Password?</a></p>
-            <p class="signup">Don't have an account? <a href="signup.html">Sign up</a></p>
+            <!-- Link to reset password -->
+            <p class="forgot-password"><a href="../HTML/forgot-password.html">Forgot Password?</a></p>
+            <!-- Link to sign up for a new account -->
+            <p class="signup">Don't have an account? <a href="../HTML/signup.html">Sign up</a></p>
         </div>
     </div>
 </body>

@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Title of the webpage -->
 	<title>Contact Us</title>
+	<!-- Link to custom JavaScript file -->
 	<script src="../JS/contact.js"></script>
-
 	<!-- Link to custom CSS stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
 	<!-- Link to Boxicons CSS -->
@@ -22,6 +22,7 @@
 </head>
 
 <body>
+	<!-- Header section -->
 	<section class="header2">
 		<nav>
 			<!-- University Logo with link to homepage -->
@@ -42,6 +43,7 @@
 		<h1 style="text-shadow: 2px 2px 5px black;">Contact Us</h1>
 	</section>
 
+	<!-- Location section with embedded Google Maps -->
 	<section class="location">
 		<!-- Google Maps Embed -->
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805805!3d43.7182412!2m3!1f0!2f0!3f0!3m2
@@ -50,6 +52,7 @@
 		referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<br><br><br><br>
 
+		<!-- Contact Us section -->
 		<section class="contact-us">
 			<div class="row">
 				<div class="contact-col">
@@ -79,8 +82,8 @@
 					</div>
 				</div>
 				
+				<!-- Contact form -->
 				<div class="contact-col">
-					<!-- Contact form -->
 					<form id="contactForm" action="../HTML/thankyoumessage.html" method="post" onsubmit="return validateForm()">
 						<input type="text" id="name" placeholder="Enter Your Name" required>
         				<br><br>
@@ -97,8 +100,8 @@
 		</section>
 	</section>
 
+	<!-- Footer section -->
 	<footer style="background-image: linear-gradient(rgb(44, 255, 2),rgba(0, 0, 0, 0.715)), url(../IMG/certificate.jpg);">
-	
 		<div class="footer">
 			<!-- Footer contact information -->
 			<p style="font-size: 18px;">&copy; 2024  | <i class='bx bxl-gmail' style="color: black;" ></i> <a href="mailto:abc@xyz.com"> abc@xyz.com</a> | <i class='bx bx-phone-call' style="color: black;"></i> <a href="tel:(123) 456-8901">(123) 456-8901</a> | <i class='bx bx-pin' style="color: black;"></i><a href="https://www.google.com/maps/place/Toronto,+ON/">Toronto, ON</a></p>
@@ -111,9 +114,7 @@
 			<a href="www.instagram.com" class="icons1"><i class="bx bxl-instagram"></i></a>
 			<a href="www.facebook.com" class="icons1"><i class="bx bxl-facebook"></i></a>
 		</div>
-	
-		</footer>
-		<!-- Footer Ends -->
-
+	</footer>
+	<!-- Footer Ends -->
 </body>
 </html>

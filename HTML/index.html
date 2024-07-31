@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and compatibility -->
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to jQuery library -->
 	<script src="../jquery3.7.1.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Link to custom JavaScript file -->
 	<script src="../JS/faq.js"></script>
+
 	<title>Healing Hands Rehab</title>
 
+	<!-- Favicon for the website -->
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
 	<!-- Link to custom CSS stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
-	<!-- Link to boxicons CSS library -->
+
+	<!-- Link to boxicons CSS library for icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
+	<!-- Header section with navigation menu -->
 	<section class="header">
 		<nav>
 			<!-- Logo with link to homepage -->
-			<a href="index.html"><img src="../IMG/logo.png"></a>
+			<a href="index.html"><img src="../IMG/logo.png" alt="Healing Hands Rehab Logo"></a>
 			<div class="nav-links">
 				<ul>
 					<!-- Navigation links -->
 					<li><a href="../HTML/login.html">User Login</a></li>
 					<li><a href="../HTML/about.html">About Us</a></li>
 					<li><a href="../HTML/services.html">Services We Offer</a></li>
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="../HTML/blog.html">Blog</a></li>
 					<li><a href="../HTML/gallery.html">Gallery</a></li>
 					<li><a href="../HTML/contact-us.html">Contact Us</a></li>
 				</ul>
@@ -37,7 +47,7 @@
 			<!-- Main headline -->
 			<h1 style="text-shadow: 2px 2px 5px black;">Canada's Leading Healthcare Provider</h1>
 			<!-- Sub headline -->
-			<h2 style="text-shadow: 2px 2px 5px black;">Get Better. Faster..</h2>
+			<h2 style="text-shadow: 2px 2px 5px black;">Get Better. Faster.</h2>
 			<br><p>
 				<!-- Description -->
 				<br><br>Our healthcare staff and professionals strive to improve the physical and<br>
@@ -48,7 +58,7 @@
 		</div>
 	</section>
 
-	<!-- service section -->
+	<!-- Service section -->
 	<section class="service">
 		<u><h1>Demanding Services We Offer :</h1></u><br><br>
 		<!-- Description of services -->
@@ -59,8 +69,8 @@
 			solutions that allow clients to remain in the comfort of their own home.
 		</p>
 		<div class="row">
+			<!-- Physical Therapy service details -->
 			<div class="service-col">
-				<!-- Physical Therapy service details -->
 				<h3>Physical Therapy</h3>
 				<ul>
 					<li class="li" style="display:inline;"><br>1. Physical therapy focuses on improving movement, strength, and functionality. <br>2. It often involves <u>exercises, stretches, 
@@ -72,8 +82,8 @@
 				<!-- Button linking to service page -->
 				<button><a href="../HTML/services.html"> Click to Know More</a></button>
 			</div>
+			<!-- Speech and Language Therapy service details -->
 			<div class="service-col">
-				<!-- Speech and Language Therapy service details -->
 				<h3>Speech and Language Virtual Therapy</h3>
 				<ul>
 					<li class="li">
@@ -88,8 +98,8 @@
 				<!-- Button linking to service page -->
 				<button id="btn-mid"><a href="../HTML/services.html"> Click to Know More </a></button>
 			</div>
+			<!-- Massage Therapy service details -->
 			<div class="service-col">
-				<!-- Master's service details -->
 				<h3>Massage Therapy</h3>
 				<ul>
 					<li class="li">
@@ -97,7 +107,7 @@
 						manipulate the muscles and other soft tissues of the body. Unlike acupressure, 
 						which focuses on specific points, massage therapy often involves broader, 
 						more generalized strokes. Types of massage therapy we offer are <b>Swedish Massage</b>, <b>Hot Stone Massage</b>,
-						<b><u>Thai Massage</u></b>and <b>Trigger Point Massage.</b>
+						<b><u>Thai Massage</u></b> and <b>Trigger Point Massage.</b>
 						It helps <u>reduce stress, anxiety, muscle tension and pain</u> making it effective for 
 						managing conditions such as chronic back pain, arthritis, and fibromyalgia. By improving blood 
 						circulation, massage therapy promotes faster healing of injured tissues and reduces inflammation.</li>
@@ -113,25 +123,25 @@
 		<div class="location">
 			<!-- Heading for Location section -->
 			<h1>Our Rehab Centers:</h1><br><br><br>
-			<!-- Row for displaying Location -->
-			<div class="rows" class="row">
+			<!-- Row for displaying locations -->
+			<div class="rows">
 				<!-- Location 1 -->
 				<div class="location-col">
-					<img src="../IMG/london.png" alt="location image">
+					<img src="../IMG/london.png" alt="Location image">
 					<div class="layer">
 						<h3>CANADA</h3>
 					</div>
 				</div>
 				<!-- Location 2 -->
 				<div class="location-col">
-					<img src="../IMG/newyork.png" alt="location image">
+					<img src="../IMG/newyork.png" alt="Location image">
 					<div class="layer">
 						<h3>NEW YORK</h3>
 					</div>
 				</div>
 				<!-- Location 3 -->
 				<div class="location-col">
-					<img src="../IMG/washington.png" alt="location image">
+					<img src="../IMG/washington.png" alt="Location image">
 					<div class="layer">
 						<h3>SYDNEY</h3>
 					</div>
@@ -140,11 +150,9 @@
 		</div>
 	</section>
 
-
-
-	<!-- FAQ START -->
+	<!-- FAQ section -->
     <div class="faq-container">
-		<h2>Frequently Asked Questions:-</h2><br>
+		<h2>Frequently Asked Questions:</h2><br>
 
         <div class="faq-item">
             <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: green; color: white;">How do you get started with virtual therapy sessions?<span class="arrow"></span></div>
@@ -174,31 +182,25 @@
 				recovery. We provide tailored rehabilitation programs to support healing, restore function, and help you return to your normal 
 				activities as quickly and safely as possible.
 			</div>
-
         </div>
     </div>
-	<!-- FAQ END -->
-
-
 
 	<!-- Footer section -->
 	<footer style="background-image: linear-gradient(rgba(62, 158, 17, 0.023),rgb(12, 162, 69)), url(../IMG/certificate.jpg);">
-	
-	<div class="footer">
-		<!-- Footer heading -->
-		<h4>Your Journey to Recovery Starts Here..</h4>
-		<!-- Footer contact information -->
-		<p style="font-size: 18px;">&copy; 2024  | <i class='bx bxl-gmail' style="color: black;" ></i> <a href="mailto:abc@xyz.com"> abc@xyz.com</a> | <i class='bx bx-phone-call' style="color: black;"></i> <a href="tel:(123) 456-8901">(123) 456-8901</a> | <i class='bx bx-pin' style="color: black;"></i><a href="https://www.google.com/maps/place/Toronto,+ON/">Toronto, ON</a></p>
-	</div>
+		<div class="footer">
+			<!-- Footer heading -->
+			<h4>Your Journey to Recovery Starts Here...</h4>
+			<!-- Footer contact information -->
+			<p style="font-size: 18px;">&copy; 2024  | <i class='bx bxl-gmail' style="color: black;" ></i> <a href="mailto:abc@xyz.com"> abc@xyz.com</a> | <i class='bx bx-phone-call' style="color: black;"></i> <a href="tel:(123) 456-8901">(123) 456-8901</a> | <i class='bx bx-pin' style="color: black;"></i><a href="https://www.google.com/maps/place/Toronto,+ON/">Toronto, ON</a></p>
+		</div>
 
-	<div class="icons1">
-		<!-- Social media icons -->
-		<a href="www.linkedin.com" class="icons1"><i class='bx bxl-linkedin' ></i></a>
-		<a href="www.twitter.com" class="icons1"><i class='bx bxl-twitter'></i></a>
-		<a href="www.instagram.com" class="icons1"><i class="bx bxl-instagram"></i></a>
-		<a href="www.facebook.com" class="icons1"><i class="bx bxl-facebook"></i></a>
-	</div>
-
+		<div class="icons1">
+			<!-- Social media icons -->
+			<a href="www.linkedin.com" class="icons1"><i class='bx bxl-linkedin' ></i></a>
+			<a href="www.twitter.com" class="icons1"><i class='bx bxl-twitter'></i></a>
+			<a href="www.instagram.com" class="icons1"><i class="bx bxl-instagram"></i></a>
+			<a href="www.facebook.com" class="icons1"><i class="bx bxl-facebook"></i></a>
+		</div>
 	</footer>
 	<!-- Footer Ends -->
 
